@@ -21,7 +21,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+#The following function calculates the mean of the  Matrix created with the above function. 
+#However, it first checks to see if the mean has already been calculated
 
 cacheSolve <- function(x, ...) {
         inverse <- x$getinverse()
@@ -33,7 +34,7 @@ cacheSolve <- function(x, ...) {
         inverse <- solve(data, ...)
         x$setinverse(inverse)
         inverse
-        ## Return a matrix that is the inverse of 'x'
+        # Return a matrix that is the inverse of 'x'
 }
 #sample run
 # x<-matrix(c(1,2, 4, 3, 1, 5, 7,9,8), nrow=3,ncol = 3)
